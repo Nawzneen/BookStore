@@ -11,7 +11,7 @@ import Layout from "./components/Layout";
 // import NotFound from "./components/NotFound";
 // import Login from "./components/Login.tsx";
 // import Error from "./components/Error.tsx";
-// import Home from "./components/Home.tsx";
+import Home from "./components/Home";
 // import About from "./components/About.tsx";
 // import Books from "./pages/books/Books.tsx";
 // import BookDetails from "./pages/books/BookDetails.tsx";
@@ -46,7 +46,7 @@ function App() {
           // action={loginAction}
           loader={loginLoader}
         /> */}
-        {/* <Route index end element={<Home />} /> */}
+        <Route index element={<Home />} />
         {/* <Route path="about" element={<About />} />
         <Route path="books">
           <Route
@@ -67,7 +67,7 @@ function App() {
   );
 
   return (
-    <div className="App">
+    <div className="App-container">
       <RouterProvider router={router} />
     </div>
   );
