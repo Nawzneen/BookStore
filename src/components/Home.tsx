@@ -14,7 +14,7 @@ export default function Home() {
             Add your next favorite book or audio book to your library.
           </p>
           <Link to="/books" className="">
-            <button className="btn link-button">Find your book</button>
+            <button className="header-button">Find your book</button>
           </Link>
         </div>
         <div className="col-12 col-md-6 p-4 img-container "></div>

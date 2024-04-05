@@ -1,22 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Goudy+Bookletter+1911&family=Inter&display=swap");
 $primary-color: #49243e;
 $secondary-color: #704264;
 $tertiary-color: #bb8493;
 $quaternary-color: #dbafa0;
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: $primary-color;
+$primary-font: "Goudy Bookletter 1911", serif;
+$secondary-font: "Coiny", "system-ui";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+body {
+  // font-family: $secondary-font;
+  background-color: $primary-color;
+  h1,
+  h2,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-family: $primary-font;
+  }
+  button {
+    font-family: $secondary-font;
 
-.btn {
-  padding: 10px;
-  margin-top: 30px;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  width: 18rem;
-  height: 4rem;
-  font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 18rem;
+    height: 4rem;
+    font-size: 1.2rem;
+  }
 }
 
 .App-container {
@@ -30,6 +48,8 @@ header {
   color: white;
   padding: 20px;
   flex: 0 1 auto;
+  font-family: $secondary-font;
+  font-size: 1.2rem;
 
   a {
     text-decoration: none;
@@ -40,8 +60,10 @@ header {
 footer {
   background-color: rgb(22, 22, 22);
   color: white;
-  padding: 20px;
+  padding: 10px;
   flex: 0 1 auto;
+  font-family: $secondary-font;
+
   a {
     text-decoration: none;
     color: white;
