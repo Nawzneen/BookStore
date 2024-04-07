@@ -69,6 +69,8 @@ footer {
     color: white;
   }
 }
+
+// HOME SECTION
 .home-section {
   flex-grow: 1;
 
@@ -109,36 +111,53 @@ footer {
 }
 
 .book-section {
-  background-color: $tertiary-color;
+  flex: 1; // background-color: $tertiary-color;
   .book-card {
+    border-radius: 5px;
     background-color: $quaternary-color;
+    // width: 310px;
+    // height: 500px;
     h4 {
+      overflow: hidden;
       font-family: $primary-font;
-      color: $primary-color;
+      color: $tertiary-color;
     }
     img {
       width: 200px;
-
       height: 300px;
       border-radius: 10px;
     }
+    .book-card_price {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-size: 1.1rem;
+    }
     .book-card_genre {
-      background-color: $secondary-color;
+      background-color: $primary-color;
       margin: 0 1px;
       border-radius: 5px;
       padding: 5px;
-      color: #dbafa0;
+      color: $quaternary-color;
       font-weight: bold;
     }
+
     button {
       width: 100%;
+      border-radius: 3px;
+
       font-size: 1rem;
       padding: 5px;
       height: 2rem;
+      background-color: $tertiary-color;
+
+      color: $quaternary-color;
+    }
+    button:hover {
       background-color: $secondary-color;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      color: #dbafa0;
     }
   }
+}
+
+// ABOUT SECTION
+.about-section {
+  flex: 1;
 }
