@@ -8,7 +8,6 @@ export default function Footer() {
           <a href="mailto:nazanin@example.com">nazanin@example.com</a>
         </p>
       </footer>
-      ;
     </>
   );
 }

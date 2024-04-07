@@ -12,7 +12,11 @@ type LayoutProps = {
 function Layout({ isLoggedIn, setIsLoggedIn, toggleTheme }: LayoutProps) {
   return (
     <>
-      <Header />
+      <Header
+        isLoggedIn={isLoggedIn}
+        setIsLoggedIn={setIsLoggedIn}
+        toggleTheme={toggleTheme}
+      />
       <Outlet />
       <Footer />
     </>

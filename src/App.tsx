@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import "./server"; // The local server with fake api
+
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -12,8 +14,8 @@ import Layout from "./components/Layout";
 // import Login from "./components/Login.tsx";
 // import Error from "./components/Error.tsx";
 import Home from "./components/Home";
-// import About from "./components/About.tsx";
-// import Books from "./pages/books/Books.tsx";
+import About from "./components/About";
+import Books, { loader as booksLoader } from "./pages/books/Books";
 // import BookDetails from "./pages/books/BookDetails.tsx";
 
 type Theme = "dark" | "light";
@@ -47,21 +49,21 @@ function App() {
           loader={loginLoader}
         /> */}
         <Route index element={<Home />} />
-        {/* <Route path="about" element={<About />} />
+        <Route path="about" element={<About />} />
         <Route path="books">
           <Route
             index
             element={<Books />}
-            // loader={vansLoader}
-            errorElement={<Error />}
+            loader={booksLoader}
+            // errorElement={<Error />}
           />
-          <Route
+          {/* <Route
             path=":id"
             element={<BookDetails />}
             loader={bookDetailLoader}
             errorElement={<Error />}
-          />
-        </Route> */}
+          /> */}
+        </Route>
       </Route>
     )
   );

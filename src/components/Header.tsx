@@ -50,7 +50,7 @@ export default function Header({
               About
             </NavLink>
             <NavLink
-              to="/Books"
+              to="/books"
               className="nav-links"
               style={({ isActive }) => (isActive ? activeStyle : {})}
             >
