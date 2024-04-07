@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Coiny&family=Goudy+Bookletter+1911&family=Inter&display=swap");
-$primary-color: #49243e;
-$secondary-color: #704264;
-$tertiary-color: #bb8493;
-$quaternary-color: #dbafa0;
+$primary-color: #a9b388;
+$secondary-color: #b99470;
+$tertiary-color: #5f6f52;
+$quaternary-color: #fefae0;
 $primary-font: "Goudy Bookletter 1911", serif;
 $secondary-font: "Coiny", "system-ui";
 * {
@@ -25,15 +25,12 @@ body {
   }
   button {
     font-family: $secondary-font;
-
     padding: 10px;
-    margin-top: 30px;
     border: none;
     border-radius: 10px;
     font-weight: bold;
-    width: 18rem;
-    height: 4rem;
     font-size: 1.2rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -49,7 +46,10 @@ header {
   padding: 20px;
   flex: 0 1 auto;
   font-family: $secondary-font;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  height: 80px;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
 
   a {
     text-decoration: none;
@@ -58,7 +58,7 @@ header {
   }
 }
 footer {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(65, 65, 65);
   color: white;
   padding: 10px;
   flex: 0 1 auto;
@@ -69,22 +69,76 @@ footer {
     color: white;
   }
 }
-.home-container {
+.home-section {
   flex-grow: 1;
 
   color: $quaternary-color;
   a {
     color: $tertiary-color;
   }
+  h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: $tertiary-color;
+  }
+  p {
+    font-size: 1.5rem;
+  }
   .img-container {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20rem;
+    // height: 20rem;
+    // width: 100%;
     background-image: url("./images/HeroBg.jpg");
   }
   button {
-    background-color: $tertiary-color;
-    color: $primary-color;
+    background-color: $secondary-color;
+    color: $quaternary-color;
     margin-bottom: 2rem;
+    margin-top: 3rem;
+    width: 300px;
+    height: 70px;
+  }
+  button:hover {
+    background-color: $tertiary-color;
+    color: $secondary-color;
+  }
+  .main-row {
+    width: 100%;
+  }
+}
+
+.book-section {
+  background-color: $tertiary-color;
+  .book-card {
+    background-color: $quaternary-color;
+    h4 {
+      font-family: $primary-font;
+      color: $primary-color;
+    }
+    img {
+      width: 200px;
+
+      height: 300px;
+      border-radius: 10px;
+    }
+    .book-card_genre {
+      background-color: $secondary-color;
+      margin: 0 1px;
+      border-radius: 5px;
+      padding: 5px;
+      color: #dbafa0;
+      font-weight: bold;
+    }
+    button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 5px;
+      height: 2rem;
+      background-color: $secondary-color;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      color: #dbafa0;
+    }
   }
 }
