@@ -34,13 +34,12 @@ export default function Books() {
 
   function renderBookElements(books: Book[]) {
     return books.map((book: Book) => (
-      <div className="col-12  col-sm-6 col-md-4 col-lg-3">
-        <div
-          key={book.id}
-          className="book-card d-flex flex-column justify-content-center align-items-center p-4"
-        >
-          <img src={book.cover_image} alt={book.title} width="200px" />
-          <div className="book-card_details mt-3">
+      <div className="col-12  col-sm-6 col-md-6 col-lg-3">
+        <div key={book.id} className="book-card d-flex flex-column  p-4">
+          <div className="d-flex justify-content-center">
+            <img src={book.cover_image} alt={book.title} width="200px" />
+          </div>
+          <div className="book-card_details mt-3 align-items-start">
             <h4 className="">{book.title}</h4>
             <div className="d-flex flex-row justify-content-between">
               <span className="">

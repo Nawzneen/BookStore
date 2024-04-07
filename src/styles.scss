@@ -109,7 +109,7 @@ footer {
     width: 100%;
   }
 }
-
+// BOOK SECTION
 .book-section {
   flex: 1; // background-color: $tertiary-color;
   .book-card {
@@ -117,14 +117,18 @@ footer {
     background-color: $quaternary-color;
     // width: 310px;
     // height: 500px;
+    // overflow: hidden;
     h4 {
+      // to prevent title from changing the height
+      white-space: nowrap; /* Prevent text from wrapping */
       overflow: hidden;
+      text-overflow: ellipsis; /* Truncate text with ellipsis if it overflows */
       font-family: $primary-font;
       color: $tertiary-color;
     }
     img {
-      width: 200px;
-      height: 300px;
+      width: 150px;
+      height: 220px;
       border-radius: 10px;
     }
     .book-card_price {
@@ -143,7 +147,7 @@ footer {
     button {
       width: 100%;
       border-radius: 3px;
-
+      font-weight: normal;
       font-size: 1rem;
       padding: 5px;
       height: 2rem;
