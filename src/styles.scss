@@ -112,9 +112,30 @@ footer {
 // BOOK SECTION
 .book-section {
   flex: 1; // background-color: $tertiary-color;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-right: 5px;
+      padding: 5px 5px;
+      border-radius: 5px;
+      background-color: $quaternary-color;
+    }
+  }
+  .clear-filter {
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    color: gray;
+  }
   .book-card {
     border-radius: 5px;
     background-color: $quaternary-color;
+
     // width: 310px;
     // height: 500px;
     // overflow: hidden;
